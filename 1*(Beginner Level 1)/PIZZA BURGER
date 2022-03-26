@@ -1,0 +1,21 @@
+package Megagfg;
+import java.util.*;
+import java.io.*;
+public class MovieWeekend {
+	public static void main(String[] args) {
+
+		Scanner scan=new Scanner(System.in);
+		int test=scan.nextInt();
+		while(test!=0){
+		     test--;
+		     int x=scan.nextInt(),y=scan.nextInt(),z=scan.nextInt();
+		     if(x<y && x<z && x!=y && x!=z)
+		     System.out.println("NOTHING");
+		     else if(x>=y && (y>=z || y<=z))
+		     System.out.println("PIZZA");
+		     else if(x<y && x>=z && z<y)
+		     System.out.println("BURGER");
+		}
+}
+}
+
