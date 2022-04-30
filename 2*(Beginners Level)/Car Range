@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--)
+	{
+	    int P,M,V;
+	    cin>>P>>M>>V;
+	    int Effectivefuel=abs(M-P+1);
+	    cout<<V*Effectivefuel<<endl;
+	}
+	return 0;
+}
