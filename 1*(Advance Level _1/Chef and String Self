@@ -1,0 +1,49 @@
+package started;
+import java.io.*;
+import java.util.*;
+
+public class chefandstring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ Scanner sc = new Scanner(System.in);
+		//int T = sc.nextInt();
+		
+			//String str = sc.next();
+			String str1 = "ab";
+			if(str1.length()<=2)
+			{
+				System.out.println("YES");
+			}
+			else
+			{
+			String str3 = "";
+			String str5 = "";
+			str3 = Character.toString(str1.charAt(0));
+	        String str4 = Character.toString(str1.charAt(str1.length()-1));
+	    for(int i=0;i<str1.length()-1;i++)
+	    {
+	    	str4+=str1.charAt(i);
+	    }
+		
+	    for(int i=1;i<str1.length();i++)
+	    {
+	    	str5+=str1.charAt(i);
+	    }
+	    String str6 =str5+str3;
+	  System.out.println(str4 + " " + str6);
+	  if(str4.equals(str6))
+	  {
+		  System.out.println("YES");
+	  }
+	  else
+	  {
+		  System.out.println("NO");
+	  }
+			}
+		  
+		}
+		
+	}
+
+
